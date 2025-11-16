@@ -22,17 +22,15 @@ The project is divided into two main Python notebooks in Google Colaboratory:
         - XGBoost
 
 ## Results
-- **XGBoost**: Train & Test Accuracy = 0.8066  
-- **Random Forest**: 0.821  
-- **Decision Tree**: 0.814  
-- **SVM**: 0.803  
+- **XGBoost**: Train & Test Accuracy = 0.7905 
+- **Random Forest**: 0.789875
+- **SVM**: 0.78875 
 
 The XGBoost model was found to be one of the most effective in detecting phishing URLs.
 
 ## Tools & Libraries
 - Python, Google Colaboratory
 - Scikit-learn, XGBoost
-- Requests, Whois
 - Pandas, NumPy
 
 
