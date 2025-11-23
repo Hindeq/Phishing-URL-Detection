@@ -4,35 +4,51 @@
 ## Overview
 This project was completed as part of the **Cybersecurity module final project** for the Master's in Data Analytics and Artificial Intelligence. Its goal is to detect phishing URLs and distinguish them from legitimate ones using machine learning models.
 
-## Project Structure
-The project is divided into two main Python notebooks in Google Colaboratory:
+## ✨ Features
 
-1. **URL Feature Extraction**
-    - Extracts various features from URLs to help classify them as phishing or legitimate.
-    - **Address bar features**: domain of URL, presence of IP, '@' symbol, URL length, URL depth, redirection, double slashes, HTTP/HTTPS in domain, URL shortening services, tiny URLs, prefix/suffix in domain.
-    - **Domain-based features**: DNS record, web traffic, domain age, and domain registration period.
-    - **HTML & JavaScript-based features**: iframe redirection, status bar customization, disabling right-click, and website forwarding.
+- **Automatic feature extraction** from URLs:
+  - URL length, “@” symbol, redirections, shortening services
+  - Subdomain depth, IP address presence
+  - Digit/special-character ratios
+  - Domain age & suspicious patterns
+- **Machine Learning Models:**
+  - Random Forest
+  - XGBoost
+  - Support Vector Machine (SVM)
+- **Evaluation visuals:**
+  - Confusion matrices (3 models)
+  - ROC curves
+  - Accuracy & F1-score comparison plot
+- **Streamlit web interface** for real-time URL prediction
 
-2. **Phishing URL Detection**
-    - Combines the extracted features from 5,000 legitimate URLs and 5,000 phishing URLs into a single dataset.
-    - Trains multiple machine learning models on the dataset:
-        - Random Forest
-        - Decision Tree
-        - Support Vector Machine (SVM)
-        - XGBoost
 
-## Results
-- **XGBoost**: Train & Test Accuracy = 0.7905 
-- **Random Forest**: 0.789875
-- **SVM**: 0.78875 
+## Model Evaluation Results
 
-The XGBoost model was found to be one of the most effective in detecting phishing URLs.
+| Model          | Accuracy | Precision (Legit / Phish) | Recall (Legit / Phish) | F1-score (Legit / Phish) |
+|----------------|---------|---------------------------|------------------------|---------------------------|
+| Random Forest  | 0.826   | 0.86 / 0.80               | 0.78 / 0.87            | 0.82 / 0.83               |
+| XGBoost        | 0.825   | 0.85 / 0.80               | 0.78 / 0.87            | 0.82 / 0.83               |
+| SVM            | 0.819   | 0.85 / 0.79               | 0.77 / 0.86            | 0.81 / 0.83               |
+
+
+The XGBoost & Random forest models were found to be the most effective in detecting phishing URLs.
 
 ## Tools & Libraries
 - Python, Google Colaboratory
-- Scikit-learn, XGBoost
-- Pandas, NumPy
+- Scikit-learn, XGBoost, sklearn.ensebmle.RandomForestClassifier, sklearn.svc 
+- Pandas, NumPy, joblic, streamlit, pyngrok
 
+
+
+---
+
+## 👤 Project Information
+
+- **Realized by:** Hind Elqorachi, Asma Misbah, Wafa Jaafar, Chayma Belfaik 
+- **Supervised by:** [Pr. Monsef Boughrous]  
+- **University:** Ibn Zohr University – IT Excellence Center  
+- **Module:** Cybersecurity  
+- **Program:** Master in Data Analytics & AI  
 
 
 
