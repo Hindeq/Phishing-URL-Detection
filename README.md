@@ -15,10 +15,6 @@ This project was completed as part of the **Cybersecurity module final project**
   - Random Forest
   - XGBoost
   - Support Vector Machine (SVM)
-- **Evaluation visuals:**
-  - Confusion matrices (3 models)
-  - ROC curves
-  - Accuracy & F1-score comparison plot
 - **Streamlit web interface** for real-time URL prediction
 
 
