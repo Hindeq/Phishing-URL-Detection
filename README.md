@@ -34,7 +34,10 @@ The XGBoost & Random forest models were found to be the most effective in detect
 
 
 
-https://github.com/user-attachments/assets/e410fc7b-9143-4860-8074-f0bac2171ba5
+https://github.com/user-attachments/assets/96f5f13c-d98b-47eb-ba5b-2fd1523c1aaf
+
+
+
 
 ## Tools & Libraries
 - Python, Google Colaboratory
